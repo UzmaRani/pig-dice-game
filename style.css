@@ -1,0 +1,46 @@
+#hone
+{
+	background-image:url("img/g1.jpg");
+	background-size:cover;
+	padding:290px;
+}
+h1
+{    font-family: "Times New Roman", Times, serif;
+font-size: 3em;
+	color:black;
+	cursor:pointer;
+}/*
+.one{
+	width:150px;
+	height:150px;
+}*/
+.two{
+	width:150px;
+	height:150px;
+}
+#pp
+{padding-top:10px;
+	background-color:pink;
+	   height:150px;
+    width: 600px;
+   padding: 50px;
+    margin: 50px;
+	 box-shadow:20px 20px 50px 10px gray;
+    border-radius: 15px 50px;
+ 
+}
+#cp
+{
+	background-color:pink;
+   height:200px;
+    width: 600px;
+   padding: 50px;
+    margin: 50px;
+	 box-shadow:20px 20px 50px 10px gray;
+  
+   border-radius: 15px 50px;
+}
+h1.hover
+{
+	text-decoration:shadow;
+}
