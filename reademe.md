@@ -45,4 +45,4 @@ None yet. Still work in progress
 
   Licensed under the _[MIT License](https://github.com/UzmaRani/pig-dice-game/blob/master/LICENSE)_
 
-Copyright &[copy]  2018 **Uzma_Rani**
+Copyright (c)  2018 **Uzma_Rani**
