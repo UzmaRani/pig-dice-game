@@ -13,22 +13,25 @@
 <title>  P!G D!c3 Gam3 </title> 
 </head>
 <body>
-<div class="container" id="hone">
-     <img class="img-responsive" src="img/g1.jpg" id="grass">
+<div class="container">
+<a href="home.html"><button id="backButton" name="button" class="btn btn-default">Go Back</button></a>
+<!--**********Title Of the Game**********-->
+  <h1>Pig Dice</h1>
+     <div class="container" id="hone">
+   
       <div id="startScreen" class="row">
-        <h1>Pig Dice</h1>
+        
 	 
         <form>
-          <div class="col-md-6">
-            <label for="name0">Player 1:</label>
+          
+            <label for="name0">Player 1</label>
             <input type="text" name="name0" placeholder="Enter your name" id="name0" required>
-          </div>
-          <div class="col-md-6">
-            <label for="name1">Player 2:</label>
-            <input type="text" name="name1" placeholder="Enter your name" id="name1" required>
-          </div>
+            <label for="name1">Player 2</label>
+            <input type="text" name="name1" placeholder="Enter your name" id="name1" required><br><br>
+          
           <button id="startButton" type="submit" name="button" class="btn btn-default" required>Start Game!</button>
         </form>
+		<!--********** Games Rules **********-->
         <div class="rules">
           <h4>Rules:</h4>
           <ul>
@@ -42,63 +45,69 @@
       </div>
       <div id="gameScreen">
         <div class="row">
-          <div class="player0 col-xs-5">
+		<!--********** First Player Image**********-->
+          <div class="player0 col-md-5">
             <h2 class="player0Name"></h2>
-            <img class="img-responsive" src="img/cc5.png" id="pImage">
+            <img class="img-responsive" src="img/mik1.png" id="pImage">
           </div>
-          <div class="col-xs-2">
+          <div class="col-md-2">
             <br><br>
-            <h1>VS</h1>
+            <h2>VS</h2>
+			<!--**********Dice Rolling Button**********-->
             <button id="rollButton" type="button" name="button" class="btn btn-default">Roll</button>
             <p class="dieValue"></p>
+			<!--**********Hold Button****************-->
             <button id="holdButton" type="button" name="button" class="btn btn-default">Hold</button>
           </div>
-          <div class="player1 col-xs-5">
+		   <!--**********Second Player Image**********-->
+          <div class="player1 col-md-5">
             <h2 class="player1Name"></h2>
-            <img class="img-responsive" src="img/cc6.png" id="pImage">
+            <img class="img-responsive" src="img/mik3.png" id="pImage">
           </div>
         </div>
         <div class="row">
-          <div class="col-xs-5">
+          <div class="col-md-5">
             <p id="player0Turn"></p>
+			<!--**********Player One Current Score Shows Here**********-->
             <h3>Current: <span id="player0Currently"></span></h3>
+			<!--**********Player one Total Score shows Here**********-->
             <h3>Total: <span id="player0Total"></span></h3>
           </div>
-          <div class="col-xs-2">
+          <div class="col-md-2">
           </div>
-          <div class="col-xs-5">
+          <div class="col-md-5">
             <p id="player1Turn"></p>
+						<!--**********Player second Current Score Shows Here**********-->
             <h3>Current: <span id="player1Currently"></span></h3>
+			<!--**********Player second Total Score shows Here**********-->
             <h3>Total: <span id="player1Total"></span></h3>
           </div>
         </div>
       </div>
       <div id="player0Win">
+	  <!--**********Player one winning image**********-->
         <h2><span class="player0Name"></span>, you are the winner!</h2>
         <div class="row">
-          <div class="col-xs-6">
-            <img src="img/cc3.png" class="img-responsive">
+          <div class="col-md-6">
+            <img src="img/mik12.png" class="img-responsive" id="win">
           </div>
-          <div class="col-xs-6">
-            <img src="img/cc4.png" class="animated bounceOutUp img-responsive">
           </div>
-        </div>
-        <p>Pigs around the world will forever hold you in the highest regard. You are now Lord Piggly.</p>
+       
         <h3 class="playAgain">Play Again?</h3>
       </div>
       <div id="player1Win">
+	  <!--**********Player Two winning image**********-->
         <h2><span class="player1Name"></span>, you are the winner!</h2>
         <div class="row">
-          <div class="col-xs-6">
-            <img src="img/cc8.png" class="animated bounceOutUp img-responsive">
-          </div>
-          <div class="col-xs-6">
-            <img src="img/cc3.png" class="img-responsive">
+          
+          <div class="col-md-6">
+            <img src="img/mik12.png" class="img-responsive">
           </div>
         </div>
-        <p><h1>Congratulation...!!!</h1></p>
+        <p>Congratulation...!!!</p>
         <h3 class="playAgain">Play Again?</h3>
       </div>
+    </div>
     </div>
 </body>
 </html>
