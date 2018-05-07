@@ -1,19 +1,13 @@
 
-/*
-$(document).ready(function(){ 
-        $("#gLevel").hide();
-
-    $("#startButton").click(function(){
-        $("#gLevel").toggle();
-    });
-});*/
+			/**********************************************
+			 ***		 Business Logic					***
+			 **********************************************/
 var counter = Math.floor(Math.random() * 7);
 function Player(name) {
   this.name = name;
   this.currently = 0;
   this.total = 0;
   this.die1 = [1,2,3,4,5,6];
-  
   this.dieRoll = 0;
 }
 
@@ -36,7 +30,7 @@ Player.prototype.hold = function() {
 $(function() {
   function playerTurn(turnPlayer, otherPlayer) {
     $("#" + otherPlayer + "Turn").text("");
-    $("#" + turnPlayer + "Turn").html("<h1>Your Turn</h1>");
+    $("#" + turnPlayer + "Turn").html("<h3>Your Turn</h3>");
     $("." + otherPlayer + " img").removeClass("animated zoomIn");
     $("." + otherPlayer + " img").addClass("desaturate");
     $("." + turnPlayer + " img").addClass("animated zoomIn");
@@ -52,7 +46,7 @@ $(function() {
     $("#" + turnPlayer + "Currently").text(player.currently);
     $("#" + turnPlayer + "Total").text(player.total);
     playerTurn(otherPlayer, turnPlayer);
-    if(player.total >= 20){
+    if(player.total >= 100){
       winner(turnPlayer);
     }
   }
@@ -63,7 +57,7 @@ $(function() {
     if (player.dieRoll === 1) {
       playerTurn(otherPlayer, turnPlayer);
     }
-    if (player.total + player.currently >= 20) {
+    if (player.total + player.currently >= 100) {
       winner(turnPlayer);
     }
   }
@@ -72,7 +66,7 @@ $(function() {
       player.roll();
       $(".dieValue").text(player.dieRoll);
       $("#player1Currently").text(player.currently);
-      if(player.total + player.currently >= 20) {
+      if(player.total + player.currently >= 100) {
         winner(turnPlayer);
       }
       if(player.currently < 15 && player.dieRoll !== 1) {
@@ -85,7 +79,7 @@ $(function() {
       }
       else {
         player.hold();
-        if(player.total >= 20) {
+        if(player.total >= 100) {
           winner(turnPlayer);
         }
         counter++;
@@ -94,8 +88,12 @@ $(function() {
         $("button").prop("disabled", false);
         playerTurn(otherPlayer,turnPlayer);
       }
-    }, 5000));
+    }, 2000));
   }
+  
+			/**********************************************
+			 ***		 User Interface					***
+			 **********************************************/
 
   $("form").submit(function(event) {
     event.preventDefault();
@@ -130,7 +128,7 @@ $(function() {
             $("button").prop("disabled", true);
             compRoll(player1, "player0", "player1");
           }
-          if(player0.total + player0.currently >= 20) {
+          if(player0.total + player0.currently >= 100) {
             winner("player0");
           }
         }
@@ -142,7 +140,7 @@ $(function() {
         playerTurn("player1", "player0");
         $("button").prop("disabled", true);
         compRoll(player1, "player0", "player1");
-        if(player0.total >= 20) {
+        if(player0.total >= 100) {
           winner("player0");
         }
         counter++;
