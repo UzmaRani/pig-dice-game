@@ -1,41 +1,35 @@
+			 /***********************************************
+			  *****		BODY STYLING				     ****
+			  **********************************************/
+	body{
+	 background-image: url(../img/bb3.png);
+	 font-family: 'Dosis', sans-serif;
+	color: black;
+	}
+			 /***********************************************
+			  *****		Heading 1 Styling			     ****
+			  **********************************************/
 
-#hone
-{
-	background-image:url("img/g1.jpg");
-	background-size:cover;
-	padding:2px;
-}
-#gLevel
-{
-	color:black;
-	font-size: 2em;
-	background-image:url("img/g1.jpg");
-	background-size:cover;
-	padding:2px;
-}
-
-
-
-/*****************/
-body{
-  font-family: 'Dosis', sans-serif;
-  color: black;
-}
-.container{
-  max-width:1100px;
-  
-  
-}
-#home
-{
-	background-image:url(ab.jpg);
-	background-size:cover;
-}
 h1{
- 
-}
+	background-image: url(../img/dice1.jpg);
+	position:center;
+    width:600px;
+	height:220px;
+	font-size: 10em;
+	margin:auto;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+	color: #940049;
+	padding-top:5px;
+	margin-top:5px;
+	margin-bottom:10px;
+	box-shadow:20px 20px 50px 10px gray;
+    border-radius: 80px 10px;
+	  border: 6px solid #BD005D;
 
-.col-xs-2 h1{
+ }
+
+.col-md-2 h1{
   font-size: 2em;
 }
 .playAgain{
@@ -57,59 +51,85 @@ h2.player0Name, h2.player1Name{
   display: none;
 }
 #gameScreen {
-
-	background-image:url('img/g1.jpg');
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 8%;
   display: none;
 }
+			 /***********************************************
+			  *****		Game Start Button Hover			****
+			  **********************************************/
 #startButton{
-	float:center;
-   background-color:pink;
-  margin: 50px;
-  box-shadow:20px 20px 50px 10px gray;
-  font-family:"Comic Sans MS", cursive, sans-serif;
-  color: black;
-  
+	height:50px;
+	width:130px;
+	
+  border: 3px solid #BD005D;
+  color: white;
+  background: none;
   margin-top: 5px;
 }
+			 /***********************************************
+			  *****		Game Start Button Hover		 ****
+			  **********************************************/
 #startButton:hover{
-	 box-shadow:20px 20px 50px 10px gray;
+   box-shadow:20px 20px 50px 10px gray;
   position:center;
-  border-radius: 8px 15px;
-background: rgba(255, 255, 255, 0.3);
+  border-radius: 80px 10px;
+  background-color: pink;
 }
+			 /***********************************************
+			  *****	Roll and Hold Button 	  		     ****
+			  **********************************************/
 #rollButton, #holdButton{
-	
   border: 3px solid black;
   color: black;
 }
+			 /***********************************************
+			  *****Button Hover						     ****
+			  **********************************************/
 #rollButton:hover, #holdButton:hover{
 opacity: 0.7;
 }
-label{
-   
-     height:50px;
+			 /***********************************************
+			  *****	Heading 3 Styling				     ****
+			  **********************************************/
+h3{
+    height:50px;
     width: 300px;
    padding:10px;
   background-color:pink;
   margin: 10px;
   box-shadow:20px 20px 50px 10px gray;
   position:center;
+  border-radius: 80px 10px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+  border: 3px solid #BD005D;
+}
+			 /***********************************************
+			  *****		Labels Styling				     ****
+			  **********************************************/
+label{
+	
+    height:60px;
+    width: 300px;
+   padding:10px;
+  background-color:pink;
+  margin: 30px;
+  box-shadow:20px 20px 50px 10px gray;
+  position:center;
   border-radius: 8px 15px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+  border: 3px solid #BD005D;
 }
 input{
-  border-radius: 3px;
+  border-radius: 8px 15px;
+   height:60px;
+    width: 300px;
+	padding:10px;
+	border: 3px solid #BD005D;
+	  margin: 30px;
+
 }
-img#grass{
-	padding-left:0;
-  padding-bottom:0;
-  padding-right:0;
-  padding-top:0;
-  position:center;
-  margin-top: 2%;
-}
+
 #startScreen{
   position: absolute;
   top: 150px;
@@ -121,21 +141,17 @@ img#grass{
   margin: 0 auto;
   text-align: center;
 }
-#startScreen h1{
-  text-align: center;
-  font-size: 10em;
-  color: black;
+
+form{ 
+ 
+  margin-top: 15%;
 }
-form{
-  margin-top: 10%;
-}
-/*
+
 #gameScreen {
-	background-image:url('img/g1.jpg');
-  margin: 0 auto;
+  margin:  auto;
   text-align: center;
   margin-top: 8%;
-}*/
+}
 #rollButton {
   margin-top: 50px;
   width: 90px;
@@ -159,59 +175,47 @@ form{
 #player1Win p, #player0Win p{
   font-size: 1.5em;
 }
+			 /***********************************************
+			  *****	Game Rules Styling				     ****
+			  **********************************************/
 .rules {
-	
   text-align: left;
-  max-width: 800px;
-  padding: 15px;
+  height:250px;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 25px;
+  padding-left: 15px;
+  margin-top: 20px;
   background-color:pink;
-  margin: 50px;
+  margin: 30px;
   box-shadow:20px 20px 50px 10px gray;
-  position:center;
-  border-radius: 15px 50px;
-}
+  border-radius: 80px 10px;
+  border: 3px solid #BD005D;
 }
 .playAgain:hover {
   cursor: pointer;
   color: crimson;
   text-decoration: underline;
 }
-@media (max-width:992px){
-  #startScreen h1{
-    font-size: 7em;
-  }
-  #startScreen{
-    top: 80px;
-  }
-  form{
-    margin-top: 2%;
-  }
-  .rules{
-    margin-top: 2%;
-  }
-}
-@media (max-width: 768px){
-  img#grass{
-    display: none;
-  }
-  #startScreen h1{
-    font-size: 5em;
-  }
-  label{
-    color: black;
-  }
-  #startButton{
-    border: 3px solid black;
-    color: black;
-    background: none;
-    margin-top: 5px;
-  }
-  #startButton:hover{
-  background: rgba(0, 0, 0, 0.6);
-  }
-}
-
 #pImage
 {
 	width:300px;
+}
+#hidee
+{
+	display:none;
+}
+#backButton{
+	height:50px;
+	width:130px;
+   border: 3px solid #BD005D;
+   color:white;
+   background: none;
+   margin-top: 0px;
+}
+#backButton:hover{
+   box-shadow:20px 20px 50px 10px gray;
+  position:center;
+  border-radius: 80px 10px;
+  background-color: pink;
 }
