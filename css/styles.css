@@ -1,0 +1,221 @@
+			 /***********************************************
+			  *****		BODY STYLING				     ****
+			  **********************************************/
+	body{
+	 background-image: url(../img/bb3.png);
+	 font-family: 'Dosis', sans-serif;
+	color: black;
+	}
+			 /***********************************************
+			  *****		Heading 1 Styling			     ****
+			  **********************************************/
+
+h1{
+	background-image: url(../img/dice1.jpg);
+	position:center;
+    width:600px;
+	height:220px;
+	font-size: 10em;
+	margin:auto;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+	color: #940049;
+	padding-top:5px;
+	margin-top:5px;
+	margin-bottom:10px;
+	box-shadow:20px 20px 50px 10px gray;
+    border-radius: 80px 10px;
+	  border: 6px solid #BD005D;
+
+ }
+
+.col-md-2 h1{
+  font-size: 2em;
+}
+.playAgain{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+}
+.desaturate{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+h2.player0Name, h2.player1Name{
+  font-size: 3em;
+  font-weight: bolder;
+}
+#player0Win { background-image:url('1.jpg');
+  display: none;
+}
+#player1Win {
+  display: none;
+}
+#gameScreen {
+  display: none;
+}
+			 /***********************************************
+			  *****		Game Start Button Hover			****
+			  **********************************************/
+#startButton{
+	height:50px;
+	width:130px;
+	
+  border: 3px solid #BD005D;
+  color: white;
+  background: none;
+  margin-top: 5px;
+}
+			 /***********************************************
+			  *****		Game Start Button Hover		 ****
+			  **********************************************/
+#startButton:hover{
+   box-shadow:20px 20px 50px 10px gray;
+  position:center;
+  border-radius: 80px 10px;
+  background-color: pink;
+}
+			 /***********************************************
+			  *****	Roll and Hold Button 	  		     ****
+			  **********************************************/
+#rollButton, #holdButton{
+  border: 3px solid black;
+  color: black;
+}
+			 /***********************************************
+			  *****Button Hover						     ****
+			  **********************************************/
+#rollButton:hover, #holdButton:hover{
+opacity: 0.7;
+}
+			 /***********************************************
+			  *****	Heading 3 Styling				     ****
+			  **********************************************/
+h3{
+    height:50px;
+    width: 300px;
+   padding:10px;
+  background-color:pink;
+  margin: 10px;
+  box-shadow:20px 20px 50px 10px gray;
+  position:center;
+  border-radius: 80px 10px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+  border: 3px solid #BD005D;
+}
+			 /***********************************************
+			  *****		Labels Styling				     ****
+			  **********************************************/
+label{
+	
+    height:60px;
+    width: 300px;
+   padding:10px;
+  background-color:pink;
+  margin: 30px;
+  box-shadow:20px 20px 50px 10px gray;
+  position:center;
+  border-radius: 8px 15px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 1.5em;
+  border: 3px solid #BD005D;
+}
+input{
+  border-radius: 8px 15px;
+   height:60px;
+    width: 300px;
+	padding:10px;
+	border: 3px solid #BD005D;
+	  margin: 30px;
+
+}
+
+#startScreen{
+  position: absolute;
+  top: 150px;
+  left: 10%;
+  right: 10%;
+  max-width: 1000px;
+}
+#startScreen {
+  margin: 0 auto;
+  text-align: center;
+}
+
+form{ 
+ 
+  margin-top: 15%;
+}
+
+#gameScreen {
+  margin:  auto;
+  text-align: center;
+  margin-top: 8%;
+}
+#rollButton {
+  margin-top: 50px;
+  width: 90px;
+  height: 90px;
+  background-image: url(../img/dice.png);
+  border-radius: 8px;
+  color: crimson;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Permanent Marker', cursive;
+}
+#holdButton{
+  font-size: 17px;
+}
+.dieValue {
+  font-size: 3em;
+}
+#player1Win, #player0Win{
+  text-align: center;
+}
+#player1Win p, #player0Win p{
+  font-size: 1.5em;
+}
+			 /***********************************************
+			  *****	Game Rules Styling				     ****
+			  **********************************************/
+.rules {
+  text-align: left;
+  height:250px;
+  max-width: 1000px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 25px;
+  padding-left: 15px;
+  margin-top: 20px;
+  background-color:pink;
+  margin: 30px;
+  box-shadow:20px 20px 50px 10px gray;
+  border-radius: 80px 10px;
+  border: 3px solid #BD005D;
+}
+.playAgain:hover {
+  cursor: pointer;
+  color: crimson;
+  text-decoration: underline;
+}
+#pImage
+{
+	width:300px;
+}
+#hidee
+{
+	display:none;
+}
+#backButton{
+	height:50px;
+	width:130px;
+   border: 3px solid #BD005D;
+   color:white;
+   background: none;
+   margin-top: 0px;
+}
+#backButton:hover{
+   box-shadow:20px 20px 50px 10px gray;
+  position:center;
+  border-radius: 80px 10px;
+  background-color: pink;
+}
